@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WEB</title>
+
+    <!-------main file css---------->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+
+    <!-----------------------------------------------swiper js------------------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Pro:wght@300&family=Farro:wght@500&family=KoHo:ital,wght@1,300&family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans:ital@1&family=Nunito:ital,wght@1,300&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Reggae+One&family=Roboto:ital,wght@1,300&display=swap');
+        </style>
+
+        
+    <!---------------------scroll reveal event pkg-------------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+
+    <!----------------header------------------------->
+    <header id="header">
+        <div class="container">
+            
+                <a href="#" class="logo">
+                    <img src="images/my logo.png" alt="" class="img-fluid">
+                </a>
+                
+                <ul class="menu">
+                    <li class="menu_item">
+                        <a href="#hero" class="menu_link active-link">Home</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#about" class="menu_link">About</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#resume" class="menu_link">Resume</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#portfolio" class="menu_link">Portfolio</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#contact" class="menu_link">Contact</a>
+                    </li>
+                    
+                    <ion-icon name="close-outline" class="close_icon"></ion-icon>
+                    
+                </ul>
+                <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+                <img src="images/moon.png" id="icon">
+
+                
+            
+            
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+
+
+    <main>
+
+        <!---------------------------------------Home Section----------------------------------------------------------->
+
+        <section class="hero section" id="hero">
+            <div class="hero_container container grid">
+                <div class="hero_content">
+                    <h4>Hi There, <span class="emoji">👋</span></h4>
+                    <h2>C.A.P.K Widushan</h2>
+                    <h1>I'm a <br>
+                        <span class="auto-input"></span>
+                    </h1>
+                    <p>
+                        I'm a creative designer based in Sri Lanka, and I'm very passionate and dedicated to my work.
+                    </p>
+                    <div class="hero_social">
+                        <a href="https://www.linkedin.com/in/pasindu-widushan-865423281/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://www.facebook.com/profile.php?id=100091057737564"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://wa.me/+94765262304"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </div>
+                    <a href="#resume" class="btn">
+                        Read More <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="hero_img">
+                    <img src="images/profile.png" alt="" >
+                </div>
+            </div>
+        </section>
+
+
+         <!---------------------------------------About Section----------------------------------------------------------->
+
+         <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <div class="about_img">
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/aboutanime.jpeg">
+                            <h2>C.A.P.K Widushan <br> <span>Undergraduate</span></h2>
+                            <a href="#contact">Hire Me</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="about_content">
+                    <h1>My passion is to make professional and creative designs for your success. </h1>
+                    <p>With a relentless passion for crafting professional and creatively captivating designs,
+                         I'm committed to elevating your brand's visual identity. Every project is a canvas for innovation, 
+                         ensuring your success through stunning visuals that leave a lasting impact. 
+                         Let's turn your vision into a visual masterpiece.
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="number">5+</span>
+                            <br>
+                            <span class="text">Completed <br>Projects</span>
+                        </div>
+                        <div>
+                            <span class="number">100+</span>
+                            <br>
+                            <span class="text">Customer <br>Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+         <!----------------------------------------------Resume Section---------------------------------------------------------------------->
+
+         <section class="resume section" id="resume">
+
+            <h2 class="section_title">Resume</h2>
+
+            <div class="resume_container container grid">
+                <div class="resume_tabs">
+                    <ul>
+                        <li>
+                            <a href="#page-1" >Education</a>
+                        </li>
+                        <li>
+                            <a href="#page-2">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#page-3">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#page-4">Certificates</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_content">
+
+                    <div id="page-1" class="page one"></div>
+                    <div class="page_heading">Education</div>
+                    <div class="resume_wrap">
+                        <div class="resume_wrap-icon">
+                            <ion-icon name="school"></ion-icon>
+                        </div>
+                        <div class="resume_wrap-content">
+                            <span class="date">2022-2026</span>
+                            <h4>Bachelor in Information & Communication Engineering</h4>
+                            <span class="position">SLTC Research University</span>
+                            <p>The degree is normally required in order to work in the Information technology industry. 
+                                A Bachelor of Science in Information Technology (B.Sc IT) 
+                                degree program typically takes three to four years depending on the country.
+                                This degree is primarily focused on subjects such as software, databases, and networking.</p>
+                        </div>
+                    </div>
+                   
+
+                    <div id="page-2" class="page two"></div>
+                    <div class="page_heading">Experience</div>
+                    <div class="resume_wrap">
+                        <div class="resume_wrap-icon">
+                            <ion-icon name="code-working"></ion-icon>
+                        </div>
+                        <div class="resume_wrap-content">
+                            <span class="date">2020-2021</span>
+                            <h4>Trainee Assistant Accountant</h4>
+                            <span class="position">Waguruwela Oil Mills (Pvt) Ltd</span>
+                            <p>My exposure in the area I was trained to calulate the total income , total cost & the profit in ihe whole factory.
+                                I did data entry and maintain a database which is based in costing in the company.
+                                I handled my major responsibilities to the entire satisfaction of my supervisors and worked cordially with colleagues. </p>
+                        </div>
+                    </div>
+                    
+
+
+                    <div id="page-3" class="page three">
+                        <div class="page_heading">Skills</div>
+                        <div class="progressBoxs grid">
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>Python</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>Java</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>C++</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>HTML,CSS,JS,PHP</span>
+                                    <span>97%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 97%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>MySQL</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>Photoshop</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>Flutter</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>Logo Designing</span>
+                                    <span>93%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 93%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page-4" class="page four"></div>
+                    <div class="page_heading">Certificates</div>
+                    
+                    <div class="img_container">
+                        <div class="gallery">
+                            <a href="images/webCertificates/CODEMANIA SLTC_page-0001.jpg" data-lightbox="models" data-title="Codemania At SLTC Research University">
+                                <img src="images/webCertificates/CODEMANIA SLTC_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Python_for_Beginners_E-Certificate_page-0001.jpg" data-lightbox="models" data-title="Python for Beginners E-Certificate At University of Moratuwa">
+                                <img src="images/webCertificates/Python_for_Beginners_E-Certificate_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Python_Programming_E-Certificate_page-0001.jpg" data-lightbox="models" data-title="Python Advanced E-Certificate At University of Moratuwa">
+                                <img src="images/webCertificates/Python_Programming_E-Certificate_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Java Great Learning.jpg" data-lightbox="models" data-title="Java Programming At Great Learning Online Course">
+                                <img src="images/webCertificates/Java Great Learning.jpg">
+                            </a>
+                            <a href="images/webCertificates/Cloud Devtown_page-0001.jpg" data-lightbox="models" data-title="Cloud Computing with AWS At Devtown Online BootCamp">
+                                <img src="images/webCertificates/Cloud Devtown_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Cloud Microsoft_page-0001.jpg" data-lightbox="models" data-title="Cloud Computing with AWS At Microsoft Learn Student Ambassador Online BootCamp">
+                                <img src="images/webCertificates/Cloud Microsoft_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Front-END Devtown_page-0001.jpg" data-lightbox="models" data-title="Front End Web Development with React JS & JavaScript At Devtown Online BootCamp">
+                                <img src="images/webCertificates/Front-END Devtown_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Front-END AWS_page-0001.jpg" data-lightbox="models" data-title="Front End Web Development with React JS & JavaScript At AWS Community Builders Online BootCamp">
+                                <img src="images/webCertificates/Front-END AWS_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Back-END Devtown_page-0001.jpg" data-lightbox="models" data-title="Backend Web Development JavaScript, Node.js and Express At Devtown Online BootCamp">
+                                <img src="images/webCertificates/Back-END Devtown_page-0001.jpg">
+                            </a>
+                            <a href="images/webCertificates/Back-END GDSC_page-0001.jpg" data-lightbox="models" data-title="Backend Web Development JavaScript, Node.js and Express At Google Developer Student Clubs Online BootCamp">
+                                <img src="images/webCertificates/Back-END GDSC_page-0001.jpg">
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+         <!----------------------------------------------Portfolio Section---------------------------------------------------------------------->
+         <section class="Portfolio_container" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+
+            <div class="portfolio_container container">
+                <ul class="portfolio_filters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-web">Web</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-graphic">Graphic</li>
+                </ul>
+                <div class="portfolio_wrap-container">
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/web1.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 1</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/web2.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 2</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/web3.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/web4.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 4</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/web5.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 5</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="portfolio_item filter-web">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/web6.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Web 6</h4>
+                                <p>Web</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/app1.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/app2.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 2</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/app3.jpg" alt="" class="img-fluid" >
+                            <div class="portfolio_info">
+                                <h4>App 3</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/app4.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 4</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/app5.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 5</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="portfolio_item filter-app">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/app6.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>App 6</h4>
+                                <p>App</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio_item filter-graphic">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/graphic1.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Graphic 1</h4>
+                                <p>Graphic</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-graphic">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/graphic2.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Graphic 2</h4>
+                                <p>Graphic</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-graphic">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/graphic3.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Graphic 3</h4>
+                                <p>Graphic</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-graphic">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/graphic4.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Graphic 4</h4>
+                                <p>Graphic</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-graphic">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/graphic5.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Graphic 5</h4>
+                                <p>Graphic</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_item filter-graphic">
+                        <div class="portfolio_wrap">
+                            <img src="images/services/graphic6.jpg" alt="" class="img-fluid">
+                            <div class="portfolio_info">
+                                <h4>Graphic 6</h4>
+                                <p>Graphic</p>
+                                <div class="portfolio_links">
+                                    <a href="#"><ion-icon name="add"></ion-icon></a>
+                                    <a href="#"><ion-icon name="link"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </ul>
+                </div>
+            </div>
+         </section>
+
+
+         <!----------------------------------------------Testimonial Section---------------------------------------------------------------------->
+         <section class="testimonial section" id="testimonial">
+            <h2 class="section_title">Testimonial</h2>
+
+            <div class="testimonial_container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial_item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>As an industry expert, I've found 
+                            this website to be a valuable resource for staying updated 
+                            on the latest trends and developments. Highly recommended!
+                        </p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="img_name">
+                            <img src="images/p1.PNG" alt="">
+                            <span class="name">Anna Smith</span>
+                            <span class="post">Clients</span>
+                        </div>
+                        <div class="testimonial-social">
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial_item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>I recently used the services offered on this website, 
+                            and I'm thrilled with the results. Their team is professional,
+                             responsive, and they exceeded my expectations.
+                        </p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="img_name">
+                            <img src="images/p2.PNG" alt="">
+                            <span class="name">John Decay</span>
+                            <span class="post">Clients</span>
+                        </div>
+                        <div class="testimonial-social">
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial_item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>I've been a loyal visitor of this website for years. 
+                            It consistently provides high-quality content and helpful insights.
+                            I trust their information.
+                        </p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="img_name">
+                            <img src="images/p3.PNG" alt="">
+                            <span class="name">Selena Dikinson</span>
+                            <span class="post">Clients</span>
+                        </div>
+                        <div class="testimonial-social">
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial_item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>This website has connected me with like-minded individuals who share
+                             my passions.The forums and community here are welcoming and supportive.
+                        </p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="img_name">
+                            <img src="images/p4.PNG" alt="">
+                            <span class="name">Jenifer Lady</span>
+                            <span class="post">Clients</span>
+                        </div>
+                        <div class="testimonial-social">
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial_item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Our business engaged with this website's services, 
+                            and it had a significant impact on our growth.
+                            We couldn't have achieved our goals without their expertise.
+                        </p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="img_name">
+                            <img src="images/p5.PNG" alt="">
+                            <span class="name">Samuel Wilson</span>
+                            <span class="post">Clients</span>
+                        </div>
+                        <div class="testimonial-social">
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial_item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>I stumbled upon this website and couldn't be happier. The information 
+                            and resources here have been a game-changer for me. Thank you!
+                        </p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                        </div>
+                        <div class="img_name">
+                            <img src="images/p6.PNG" alt="">
+                            <span class="name">Olivia Davis</span>
+                            <span class="post">Clients</span>
+                        </div>
+                        <div class="testimonial-social">
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination testimonial_container-pagination"></div>
+                </div>
+            </div>
+         </section>
+
+
+         <!----------------------------------------------Services Section---------------------------------------------------------------------->
+         <section class="services section" id="services">
+            <h2 class="section_title">Services</h2>
+
+            <div class="services_container container grid">
+                <div class="services_item active-modal">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3 class="services_title">WEB <br>Designer</h3>
+                    <span class="services_button">View More <i class="fa-solid fa-caret-right"></i></span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                            <h3 class="services_modal-title">WEB Designer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.Providing quality work to
+                                clients and companies
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I develop the user interface.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Web page development.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I create ux element interactions.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I position your company brand.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <h3 class="services_title">APP <br>Developer</h3>
+                    <span class="services_button">View More <i class="fa-solid fa-caret-right"></i></span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                            <h3 class="services_modal-title">APP Developer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.Providing quality work to
+                                clients and companies
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I develop the user interface.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Web page development.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I create ux element interactions.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I position your company brand.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <i class="fa-solid fa-user-pen"></i>
+                    <h3 class="services_title">GRAPHIC <br>Designer</h3>
+                    <span class="services_button">View More <i class="fa-solid fa-caret-right"></i></span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                            <h3 class="services_modal-title">GRAPHIC Designer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.Providing quality work to
+                                clients and companies
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I develop the user interface.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Web page development.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I create ux element interactions.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I position your company brand.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <i class="fa-solid fa-user-tag"></i>
+                    <h3 class="services_title">Content <br>Creater</h3>
+                    <span class="services_button">View More <i class="fa-solid fa-caret-right"></i></span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                            <h3 class="services_modal-title">Content Creater</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.Providing quality work to
+                                clients and companies
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I develop the user interface.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Web page development.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I create ux element interactions.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I position your company brand.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <i class="fa-solid fa-user-pen"></i>
+                    <h3 class="services_title">Logo <br>Designer</h3>
+                    <span class="services_button">View More <i class="fa-solid fa-caret-right"></i></span>
+                    <div class="services_modal">
+                        <div>
+                            <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                            <h3 class="services_modal-title">Logo Designer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.Providing quality work to
+                                clients and companies
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I develop the user interface.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Web page development.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I create ux element interactions.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">I position your company brand.</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p class="services_model-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!----------------------------------------------Contact Section---------------------------------------------------------------------->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h3 class="topic">Hello ,</h3>
+                        <p><i class="fa-solid fa-paper-plane"></i> widushanp@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 076 52 62 304</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100091057737564"><i class="fab fa-facebook"></i></a>
+                            <a href="https://wa.me/+94765262304"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://github.com/widushan"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/pasindu-widushan-865423281/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="/my cv.pdf" download="C.A.P.K Widushan" class="btn btn2"> Download CV </ion-icon></a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="" id="contact-form">
+                            <input type="text" name="Name" placeholder="Your Name" id="Name" required>
+                            <input type="email" name="Email" placeholder="Your E-Mail" id="Email" required>
+                            <input type="text" name="subject" placeholder="Subject" id="subject" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" id="message"></textarea>
+                            <input type="button" id="btn" value="Submit" onclick="Submit()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!----------------------------------------------Footer Section---------------------------------------------------------------------->
+
+        <footer>
+            <div class="footer_bg">
+                <div class="footer_container container">
+                    <div class="main_footer">
+                        <div class="footer_letters">
+                            <i class="fa-brands fa-weebly"></i>
+
+                        </div>
+                        <h3>Web_Code</h3>
+                        <p>WebCode is a forward-thinking and innovative software development company 
+                            that has consistently demonstrated its commitment to excellence in the field.
+                             With a track record of delivering high-quality solutions to its clients, WebCode
+                             has proven itself as a reliable partner in the world of technology.
+                        </p>
+                    </div>
+                    <div class="footer_copy">
+                        &#169; Web_Code.    |   All Right Reserved  <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!---------------------scroll reveal event-------------------------->
+        <script>
+            ScrollReveal({ 
+                reset: true, 
+                distance: '600px',
+                duration: 2500,
+                delay: 1000
+            });
+
+            ScrollReveal().reveal('.hero_content', { delay: 500 , origin: 'left' });
+            ScrollReveal().reveal('.hero_img', { delay: 600 , origin: 'right' });
+
+            ScrollReveal().reveal('.section_title', { delay: 500 , origin: 'bottom' });
+            ScrollReveal().reveal('.about_img', { delay: 600 , origin: 'left' });
+            ScrollReveal().reveal('.about_content', { delay: 700 , origin: 'right' });
+
+            ScrollReveal().reveal('.resume_tabs', { delay: 500 , origin: 'left' });
+            ScrollReveal().reveal('.page_heading', { delay: 600 , origin: 'left' });
+            ScrollReveal().reveal('.resume_wrap , .progressBox', { delay: 700 , origin: 'right' });
+            ScrollReveal().reveal('.gallery img', { delay: 700 , origin: 'right' });
+
+            ScrollReveal().reveal('.portfolio_filters', { delay: 500 , origin: 'left' });
+            /*ScrollReveal().reveal('.portfolio_wrap', { delay: 600 , origin: 'right' });*/
+
+            /*ScrollReveal().reveal('.swiper-slide', { delay: 500 , origin: 'left' });*/
+
+            /*ScrollReveal().reveal('.services_item', { delay: 600 , origin: 'right' });*/
+
+            ScrollReveal().reveal('.contact-left', { delay: 500 , origin: 'left' });
+            ScrollReveal().reveal('.contact-right', { delay: 600 , origin: 'right' });
+        </script>
+
+
+
+
+
+
+
+
+
+        
+
+    </main>
+    
+
+    
+
+
+    <!-----------------------------------------------swiper js------------------------------------------------>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <!----------------------------------ionIcons------------------------------------>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!----------------------------typing js--------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  
+    <script>
+        var typed = new Typed(".auto-input" , {
+            strings: ["Web Developer" , "Graphic Designer" , "Content Creator" , "UI/UX Designer" , "Logo Designer"] ,
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true,
+            backDelay: 1000
+        })
+    </script>
+
+    <!-----------------------resume---------------------------------->
+    <script>
+        const pages = document.querySelectorAll('.page');
+        const resume = document.querySelector('.page_heading');
+
+        function resumeActive(){
+            const scrollY = window.pageYOffset;
+
+            pages.forEach(page => {
+                const sectionHeight = page.offsetHeight;
+                const sectionTop = page.offsetTop - 120;
+
+                let sectionId = page.getAttribute('id');
+
+                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    document.querySelector('.resume_tabs a[href *=' + sectionId +']').classList.add('current');
+                } else {
+                    document.querySelector('.resume_tabs a[href *=' + sectionId +']').classList.remove('current');
+                }
+
+
+            })
+        }
+
+        window.addEventListener('scroll', resumeActive);
+    </script>
+
+    <!-----------------mixitup---------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" ></script>
+
+
+    <!-----------------------portfolio---------------------------------->
+    <script>
+        
+
+
+        let filterItems = document.querySelectorAll('.portfolio_filters li');
+
+        function activePortfolio(){
+            filterItems.forEach(el => {
+                el.classList.remove('filter-active');
+                this.classList.add('filter-active');
+            })
+        }
+
+        filterItems.forEach(el => {
+            el.addEventListener('click', activePortfolio);
+        })
+
+
+
+
+
+
+        let mixerPortfolio = mixitup('.portfolio_wrap-container' ,{
+            selectors: {
+                target: '.portfolio_item'
+            },
+            animation:{
+                duration: 300
+            }
+        })
+    </script>
+
+
+    <!-------------------------------Main JS ---------------------------------------->
+
+    <script src="main.js"></script>
+
+    <!-------------------------Image Slider JS------------------------------------------->
+    <script src="lightbox-plus-jquery.js"></script>
+
+
+
+    <!---------------------------testimonial-------------------------------->
+    <script>
+        let swiper = new Swiper(".testimonial_container",{
+        effect: 'slide',
+        loop: true,
+        slidesPerView: 1,
+        grabCursor: true,
+        spaceBetween: 100,
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            }
+        }
+        })
+    </script>
+
+
+
+
+
+
+    <!---------------------contact----------------------------->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        function Submit(){
+            var name = document.getElementById("Name").value;
+            var email = document.getElementById("Email").value;
+            var sub = document.getElementById("subject").value;
+            var mg = document.getElementById("message").value;
+
+            var body = "Name: " + name + "<br/> Emaiil: " + email + 
+                        "<br/> Subject: " + sub + "<br/> Message: " + mg;
+            
+            console.log(body);
+
+            Email.send({
+            SecureToken : "23354bc0-e4b4-432e-ba66-b2f24292ec6f",
+            Host : "smtp.elasticemail.com",
+            Username : "pasindukavishka2001@gmail.com",
+            Password : "2E923D7526F0FD5F3AC2D37DE57807BAA4DB",
+            To : 'pasindukavishka2001@gmail.com',
+            From : "pasindukavishka2001@gmail.com",
+            Subject : sub,
+            Body : body
+            }).then(
+                message => {
+                    if (message == 'OK'){
+                        swal(" Done", "Your data sucessfully submitted!", "success");
+                        
+                    }
+                    else
+                    swal("Try Again", "Something went wrong!", "error");
+                    
+                }
+                
+                
+                
+                
+                
+                );
+                /*setTimeout(()=> {
+                    contact-form.textContent = ''
+                }, 5000)
+
+                contact-form.reset()*/
+                
+                
+                
+
+        }
+        
+    </script>
+
+
+<!-----------dark-light mood change---------->
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        } else{
+            icon.src = "images/moon.png";
+        }
+    }
+</script> 
+
+
+<!-----------services---------->
+<script>
+    let modalBtns = document.querySelectorAll('.services_button'),
+            modalViews = document.querySelectorAll('.services_modal'),
+            modalClose = document.querySelectorAll('.modal_close-icon');
+
+        let modal = function(modalClick){
+            modalViews[modalClick].classList.add('active-modal');
+        }
+
+        modalBtns.forEach((modalBtn, i) => {
+            modalBtn.addEventListener('click', () => {
+                modal(i);
+            });
+        });
+
+        modalClose.forEach(el => {
+            el.addEventListener('click', () => {
+                modalViews.forEach(modalView => {
+                    modalView.classList.remove('active-modal');
+                });
+            });
+        });
+
+</script>
+    
+
+
+
+</body>
+</html>
